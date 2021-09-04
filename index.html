@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="with=device-width, initial-scale=1.0">
+        <title>VIT Bhopal</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;600;700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <!-- Starting menubar-->
+            <nav>
+                <a href="https://vitbhopal.ac.in">
+                <img src ="pictures/logo.png">
+            </a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-times" onclick="hidemenu()"></i>
+                    <ul>
+                        <li><a href="">Home</a></li>
+                        <li><a href="https://vitbhopal.ac.in/vit-bhopal/">About</a></li>
+                        <li><a href="https://vitbhopal.ac.in/programmes-offered/">Course</a></li>
+                        <li><a href="https://vitbhopal.ac.in/placements-and-training/">Placements</a></li>
+                        <li><a href="">Contact</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showmenu()"></i>
+            </nav>
+            <!--Ending Menubar-->
+            <!-- Content starting -->
+            <div class="textbox">
+                <h1>India&#039;s Best Private University</h1>
+                <p>
+                    B. Tech., M. Tech., Health Care, Cyber Security, Health Care, Gaming Technology,<br> AI & ML are among the top 10 engineering institutes in India. No. 1 Private Institution for Innovation
+                </p>
+                <a href="https://vitbhopal.ac.in" class="main-btn">Visit us to know more</a>
+
+            </div>
+            <!-- content Ending-->
+        </header>
+<!-- Course-->
+        <section class="course">
+            <h1>Course we offer</h1>
+            <p>glibris</p>
+        </section>
+
+
+
+        <!-- Javascript -->
+        <script>
+            var navlinks = document.getElementById("navLinks")
+            function showmenu(){
+                navlinks.style.right = "0"
+            }
+            function hidemenu(){
+                navlinks.style.right = "-200px"
+            }
+
+
+        </script>
+    </body>
+</html>
