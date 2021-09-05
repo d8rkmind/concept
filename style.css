@@ -140,6 +140,9 @@ nav .fa{
     .nav-links ul{
         padding: 30px;
     }
+    .row{
+        flex-direction: column; /* colum ccs aran=gement */
+    }
 }
 
 /* Course */
