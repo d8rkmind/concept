@@ -145,11 +145,105 @@ nav .fa{
     }
 }
 
-/* Course */
-
-course{
+.course{
     width: 80%;
     margin: auto;
     text-align: center;
+    padding-top: 100px;
+}
 
+h1{
+    font-size: 36px;
+    font-weight: 600;
+}
+
+.row{
+    margin: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+.course-colum{
+    flex-basis: 31%;
+    background-color: blanchedalmond;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+}
+
+.course-colum ul li{
+    list-style: none;
+    display: inline-block;
+}
+
+h3{
+    text-align: center;
+    font-weight: 600;
+    margin: 10px;
+}
+
+.course-colum:hover{
+    box-shadow: 0 0 20px 0px rgba(0,0,0, 0.2);
+    transition: 0.3s;
+}
+
+/*---Future ready courses ---*/
+
+.fready{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 25px;
+}
+
+.freadycolum{
+    flex-basis: 50%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+    height: 46%;
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: column;
+    
+
+}
+.layer{
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top:0;
+    left:0;  
+    transition: 0.5s;  
+}
+.wid{
+    height: 502px;
+    width: 711px;
+}
+
+.freadycolum:hover{
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.801);
+    transition: 0.5s;
+}
+.layer:hover{
+    background:rgba(13, 25, 88, 0.582);
+
+}
+
+.layer h3{
+    width: 100%;
+    font-weight: 500;
+    color:white;
+    font-size: 20px;
+    bottom: -45%;
+    text-align: center;
+    position: relative;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.layer:hover h3{
+    opacity: 1;
 }
