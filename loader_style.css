@@ -3,7 +3,7 @@
 }
 
 :root {
-    --bg: #1c1717;
+    --bg: #0C090A;
 }
 
 body {
@@ -29,7 +29,7 @@ body {
     padding: 2rem 4rem;
     font-family: 'Barlow Condensed',sans-serif;
     font-weight: bold;
-    color: #fff;
+    color: #52595D;
     border-style: solid;
     border-width: 1vmin;
     font-size: 2rem;
