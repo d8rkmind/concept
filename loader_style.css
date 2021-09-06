@@ -1,0 +1,95 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --bg: #1c1717;
+}
+
+body {
+    min-height: 100vh;
+    background: var(--bg);
+    display: grid;
+    place-items: center;
+}
+
+@property --a {
+    initial-value: 0deg;
+    inherits: false;
+    syntax: '<angle>';
+}
+
+@property --h {
+    initial-value: 0;
+    inherits: false;
+    syntax: '<number>';
+}
+
+.loader {
+    padding: 2rem 4rem;
+    font-family: 'Barlow Condensed',sans-serif;
+    font-weight: bold;
+    color: #fff;
+    border-style: solid;
+    border-width: 1vmin;
+    font-size: 2rem;
+    --load: hsl(var(--h, 0), 80%, 50%);
+    border-image: conic-gradient(var(--load) var(--a), transparent calc(var(--a) + 0.5deg)) 30;
+    animation: load 2s infinite ease-in-out;
+}
+
+@-moz-keyframes load {
+
+    0%,
+    10% {
+        --a: 0deg;
+        --h: 0;
+    }
+
+    100% {
+        --a: 360deg;
+        --h: 100;
+    }
+}
+
+@-webkit-keyframes load {
+
+    0%,
+    10% {
+        --a: 0deg;
+        --h: 0;
+    }
+
+    100% {
+        --a: 360deg;
+        --h: 100;
+    }
+}
+
+@-o-keyframes load {
+
+    0%,
+    10% {
+        --a: 0deg;
+        --h: 0;
+    }
+
+    100% {
+        --a: 360deg;
+        --h: 100;
+    }
+}
+
+@keyframes load {
+
+    0%,
+    10% {
+        --a: 0deg;
+        --h: 0;
+    }
+
+    100% {
+        --a: 360deg;
+        --h: 100;
+    }
+}
