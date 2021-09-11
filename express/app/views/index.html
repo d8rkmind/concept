@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="with=device-width, initial-scale=1.0">
+        <title>Only for testing</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;600;700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <!-- Starting menubar-->
+            <nav>
+                <a href="https://vitbhopal.ac.in">
+                <img src ="https://raw.githubusercontent.com/d8rkmind/concept/main/pictures/logo.png">
+            </a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-times" onclick="hidemenu()"></i>
+                    <ul>
+                        <li><a href="">Home</a></li>
+                        <li><a href="https://vitbhopal.ac.in/vit-bhopal/">About</a></li>
+                        <li><a href="#course">Course</a></li>
+                        <li><a href="https://vitbhopal.ac.in/placements-and-training/">Placements</a></li>
+                        <li><a href="">Contact</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showmenu()"></i>
+            </nav>
+           
+            <div class="textbox">
+                <h1>India&#039;s Best Private University</h1>
+                <p>
+                    B. Tech., M. Tech., Health Care, Cyber Security, Health Care, Gaming Technology,<br> AI & ML and are among the top 10 engineering institutes in India. No. 1 Private Institution for Innovation
+                </p>
+                <a href="https://vitbhopal.ac.in" class="main-btn">Visit us to know more</a>
+
+            </div>
+         
+        </header>
+
+          <section class="course" id="course">
+            <h1>Course we offer</h1>
+            <p><br></p>
+            <div class="row">
+                <div class="course-colum">
+                    <h3>Integrated</h3>
+                    <p>
+                        <ul>
+                        <li></li>
+                        <li>M.Tech (Integrated) Computer Science & Engineering with Specilization in Artifical intelligence and Machine Learning</li>
+                        </ul>
+                     </p>
+                </div>
+                <div class="course-colum">
+                    <h3>UG Course</h3>
+                    <p>
+                        <ul>
+                            <li></li>
+                            <li>Computer Science & Engineering(CSE)</li>
+                            <li>Computer Science & Engineering(CSE with specilizations)</li>
+                            <li>Electrical and Electronics Engineering(EEE)</li>
+                            <li>Mechanical Engineering(BME)</li>
+                            <li>Electronics and Communication Engineering(ECE)</li>
+                            <li>Aerospace Engineering</li>
+                            <li>Bachelor of Commerce (B.com)</li>
+                            <li>Bachelor of Bisnuess Administration(BBA)</li>
+                            <li>Bachelor of Computer Application (BCA) </li>
+                        </ul>
+                    </p>
+                </div>
+                <div class="course-colum">
+                    <h3>PG Course</h3>
+                    <p>
+                        <ul>
+                            <li></li>
+                            <li>M.Tech Computer Science & Engineering(Specilization in Cyber Security & Digital forensics)</li>
+                            <li>Master of Computer Application (MCA)</li>
+                        </ul>
+                     </p>
+                </div>
+                
+            </div>
+        </section>
+
+
+        <section class="fready">
+            <h1>Future ready Course</h1>
+            <p> </p>
+            <div class="row">
+                <div class="freadycolum">
+                    <img src ="https://raw.githubusercontent.com/d8rkmind/concept/main/pictures/Aero.jpg" attr ="Aerospace" >
+                    <div class="layer">
+                        <h3>Aerospace Engineering</h3>
+                    </div>
+                </div>
+
+                <div class="freadycolum">
+                    <img src ="https://raw.githubusercontent.com/d8rkmind/concept/main/pictures/Gaming.jpg" attr ="Gaming">
+                    <div class="layer">
+                        <h3>Gaming technology</h3>
+                    </div>
+                </div>
+
+                <div class="freadycolum">
+                    <img src ="https://raw.githubusercontent.com/d8rkmind/concept/main/pictures/Cyber.jpg" attr ="Cyber">
+                    <div class="layer">
+                        <h3>Cyber Security</h3>
+                    </div>
+                </div>
+
+                <div class="freadycolum">
+                    <img src ="https://raw.githubusercontent.com/d8rkmind/concept/main/pictures/Ai.jpg" attr="AI">
+                    <div class="layer">
+                        <h3>Artifical intelligence</h3>
+                    </div>
+                </div>
+
+                <div class="freadycolum">
+                    <img src ="https://raw.githubusercontent.com/d8rkmind/concept/main/pictures/Bio.jpg" attr="Bio">
+                    <div class="layer">
+                        <h3>Bio engineering</h3>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    <section class="faclities">
+        <h1>Our faclities</h1>
+        <p><br></p>
+        <div class="row">
+            <div class="fac-col">
+                <h3>Interactive Learning</h3>
+                <p>To engage students actively in learning process, <br>Collaborative and Active Learning Paradigm is<br> implemented at VIT-Bhopal University</p>
+            </div>
+            <div class="fac-col">
+                <h3>Fully Flexable Credit System (FFCS)</h3>
+                <p>To make it easier for students to select their<br> courses, professors, and schedules.</p>
+            </div>
+    
+            <div class="fac-col">
+                <h3>Qualified Faculity</h3>
+                <p>The first Private University with 100% doctoral faculty to impart quality education.</p>
+                </a>
+            </div>
+        </div>
+
+    </section>
+
+        <script>
+            var navlinks = document.getElementById("navLinks")
+            function showmenu(){
+                navlinks.style.right = "0"
+            }
+            function hidemenu(){
+                navlinks.style.right = "-200px"
+            }
+
+
+        </script>
+    </body>
+</html>
